@@ -2,7 +2,7 @@
 <html>
 	<style>
 		:root{
-			--background: rgba(142,68,173,1); /*бэкграунд навбара*/
+			--background: rgba(142,68,173,1); /*бэкграунд навбара+фирменный цвет*/
 		}
 		
 		*, *::before, *::after { /*здесь начинается навбар */
@@ -168,14 +168,14 @@
 	} /*конец навбара*/
 		body {
 				margin: 0;
+				padding: 0;
 				background: #222;
 				font-weight: 400;
 			}
 		
 		.content {
 			height: 200vh;
-			background-image: url(https://unsplash.it/1000/1000);
-			background-color: #333;
+			background-color: rgb(32, 28, 32);
 			background-blend-mode: multiply;
 			background-size: cover;
 			display: grid;
@@ -196,9 +196,10 @@
 			<input type="checkbox" id="nav-toggle" class="nav-toggle">
 			<nav>
 				<ul>
-					<li><a href="#">Главная страница</a></li>
+					<li><a href="#">Главная</a></li>
 					<li><a href="#">Билеты</a></li>
 					<li><a href="#">Участники</a></li>
+					<li><a href="#">Спонсоры</a></li>
 					<li><a href="#">Регистрация</a></li>
 					<li><a href="#">Войти</a></li>
 				</ul>
