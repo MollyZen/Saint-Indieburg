@@ -3,7 +3,7 @@
 	<style>
 		:root{
 			--main: rgba(142,68,173,1); /*бэкграунд навбара+фирменный цвет*/
-			--background: rgba(32, 28, 32, 0.75); /*цвет фона*/
+			--background: rgba(32, 28, 32, 1); /*цвет фона*/
 		}
 		
 		*, *::before, *::after { /*здесь начинается навбар */
@@ -182,7 +182,7 @@
 			padding-top: 80px;
 			padding-left: 1em;
 			padding-right: 1em;
-			background: url("patterns/swirl.png") var(--background);
+			background: url("patterns/swirl.png") var(--background) repeat;
 			background-position: left top;
 			text-align: center;
 			color: white;
@@ -191,7 +191,12 @@
 		p {
 			font-size: 20px;
 		}
-
+		
+		#insp {
+			background: url("patterns/escheresque.png") repeat; /*хочу сделать отличающийся паттерн с более светлыми цветами, чтобы он выделялся*/
+			background-color: var(--background);
+			background-blend-mode: multiply;
+		}
 	</style>
 	
 	
@@ -216,12 +221,17 @@
 				<span></span>
 			</label>
 		</header>
-		<div class="content">
+		<div class="content"> 
 			<h1>Санкт-Индибург. 26-27 ноября, 2020<br>
-				Санкт-Петербург, Ленэкспо, павильон №7
-			</h1>
-			<p>Не важно, кто ты. Здесь найдётся место для каждого</p>
-			<img src="photos/photo-of-man-wearing-eyeglasses-3176452.jpg" style="width:50%;height:auto;float:center;">
+				Санкт-Петербург, Ленэкспо, павильон №7 <!--нужно добавить красивый фон/эффектов-->
+			</h1> 
+			<p>Санкт-Индибург - место для разработчиков игр, художников и
+				и других независимых творцов 
+			</p>
+			<div id="insp">
+				<p>Не важно, кто ты. Здесь найдётся место для каждого</p>
+				<img src="photos/photo-of-man-wearing-eyeglasses-3176452.jpg" style="width:50%;height:auto;float:center;">
+			</div>
 		</div>
 	</body>
 </html>
