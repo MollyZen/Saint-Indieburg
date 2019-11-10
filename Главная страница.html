@@ -2,7 +2,8 @@
 <html>
 	<style>
 		:root{
-			--background: rgba(142,68,173,1); /*бэкграунд навбара+фирменный цвет*/
+			--main: rgba(142,68,173,1); /*бэкграунд навбара+фирменный цвет*/
+			--background: rgba(32, 28, 32, 0.75); /*цвет фона*/
 		}
 		
 		*, *::before, *::after { /*здесь начинается навбар */
@@ -10,7 +11,7 @@
 		}
 		
 		header{
-			background: var(--background );
+			background: var(--main );
 			text-align: center;
 			position: fixed;
 			top: 0;
@@ -68,7 +69,7 @@
 			text-align: left;
 			top: 100%;
 			left: 0;
-			background: var(--background);
+			background: var(--main);
 			width: 100%;
 			transform: scale(1,0);
 			transform-origin: top;
@@ -174,22 +175,23 @@
 			}
 		
 		.content {
-			height: 100000px;
+			height: 5000px; /*не забыть поменять на адекватное значение*/
 			background-color: rgb(32, 28, 32);
 			background-blend-mode: multiply;
 			background-size: cover;
 			padding-top: 80px;
 			padding-left: 1em;
 			padding-right: 1em;
-			background-image: url("\Patterns\escheresque_@2X.png");
+			background: url("patterns/swirl.png") var(--background);
 			background-position: left top;
-			background-repeat: repeat;
-		}
-	
-		h2 {
 			text-align: center;
 			color: white;
 		}
+
+		p {
+			font-size: 20px;
+		}
+
 	</style>
 	
 	
@@ -215,7 +217,11 @@
 			</label>
 		</header>
 		<div class="content">
-			<h2>Санкт-Индибург - место, где собираются независимые творцы</h2>
+			<h1>Санкт-Индибург. 26-27 ноября, 2020<br>
+				Санкт-Петербург, Ленэкспо, павильон №7
+			</h1>
+			<p>Не важно, кто ты. Здесь найдётся место для каждого</p>
+			<img src="photos/photo-of-man-wearing-eyeglasses-3176452.jpg" style="width:50%;height:auto;float:center;">
 		</div>
 	</body>
 </html>
