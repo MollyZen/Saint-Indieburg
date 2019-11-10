@@ -108,18 +108,18 @@
 			transition: opacity 250ms ease-in-out 250ms;
 		}
 		
-		@media screen and (min-width: 800px) {
+		@media screen and (min-width: 900px) {
 			.nav-toggle-label {
 				display: none;
 			}
 			
 			header {
 				display: grid;
-				grid-template-columns: 1fr auto minmax(600px,3fr) 1fr;
+				grid-template-columns: 1fr auto minmax(600px,2fr) 1fr;
 			}
 			
 			.logo{
-				grid-column: 2 / 3;
+				grid-column: 1 / 2;
 			}
 			
 			nav {
@@ -169,20 +169,27 @@
 		body {
 				margin: 0;
 				padding: 0;
-				background: #222;
+				/*background: #222;*/
 				font-weight: 400;
 			}
 		
 		.content {
-			height: 200vh;
-			background-color: rgb(32, 28, 32);
+			height: 100%;
+			/*background-color: rgb(32, 28, 32);*/
 			background-blend-mode: multiply;
 			background-size: cover;
-			display: grid;
-			place-items: center;
+			padding-top: 80px;
+			padding-left: 1em;
+			padding-right: 1em;
+			background-image: url("escheresque_@2X.png");
+			background-position: left top;
+			background-repeat: repeat;
 		}
 	
-	
+		h2 {
+			text-align: center;
+			color: white;
+		}
 	</style>
 	
 	
@@ -198,10 +205,9 @@
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Билеты</a></li>
-					<li><a href="#">Участники</a></li>
-					<li><a href="#">Спонсоры</a></li>
-					<li><a href="#">Регистрация</a></li>
-					<li><a href="#">Войти</a></li>
+					<li><a href="#">Программа</a></li>
+					<li><a href="#">Голосование</a></li>
+					<li><a href="#">Участникам</a></li>
 				</ul>
 			</nav>
 			<label for="nav-toggle" class="nav-toggle-label">
@@ -209,7 +215,7 @@
 			</label>
 		</header>
 		<div class="content">
-			<h2>EVERYTHING GOES HERE</h2>
+			<h2>Санкт-Индибург - место, где собираются независимые творцы</h2>
 		</div>
 	</body>
 </html>
