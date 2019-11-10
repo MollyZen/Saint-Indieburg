@@ -2,10 +2,10 @@
 <html>
 	<style>
 		:root{
-			--background: rgba(142,68,173,.5);
+			--background: rgba(142,68,173,1); /*бэкграунд навбара*/
 		}
 		
-		*, *::before, *::after {
+		*, *::before, *::after { /*здесь начинается навбар */
 				box-sizing: border-box;
 		}
 		
@@ -165,7 +165,7 @@
 			nav a:hover::before {
 				transform: scale(1,1);
 		}
-	}
+	} /*конец навбара*/
 		body {
 				margin: 0;
 				background: #222;
@@ -174,7 +174,7 @@
 		
 		.content {
 			height: 200vh;
-			background-image: url(//unsplash.it/1000/1000);
+			background-image: url(https://unsplash.it/1000/1000);
 			background-color: #333;
 			background-blend-mode: multiply;
 			background-size: cover;
